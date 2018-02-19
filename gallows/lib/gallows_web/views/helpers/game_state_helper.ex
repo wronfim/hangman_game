@@ -4,9 +4,10 @@ defmodule GallowsWeb.Views.Helpers.GameStateHelper do
   @responses %{
     won:          {:success, "You Won!"},
     lost:         {:danger, "You Lost!"},
-    good_guess:   {:success, "Goodguess!"},
+    good_guess:   {:success, "Good guess!"},
     bad_guess:    {:warning, "Bad guess!"},
     already_used: {:info, "You already guessed that!"},
+    initializing: {:info, "Let's Play"},
   }
 
   def game_state(state) do
